@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function isPalindrome(str) {
+            str = str.toLowerCase().replace(/[\W_]/g, '');
+            //dùng hàm toLowerCase() và sử dụng hàm replace() với tham số truyền vào là RegEx 
+            // và ” (null) để đảm bảo chuỗi không tồn tại các ký tự đặc biệt và dấu gạch dưới
+            len = str.length - 1;
+            // chỉ duyệt các từ trong chuỗi từ vị trí số 0 đến vị trí n – 1, do chuỗi là một mảng bao gồm các từ
+            for (var i = 0; i < len / 2; i++) {
+                if (str[i] !== str[len - i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        document.write(isPalindrome(prompt('Enter a string')));
+    </script>
+</body>
+
+</html>

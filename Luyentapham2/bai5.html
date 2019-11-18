@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkMin(a, b, c) {
+            let min = a;
+            if (b < min) {
+                min = b;
+            } else if (c < min) {
+                min = c;
+            }
+            return min;
+        }
+        let num1 = +prompt('Enter first number : ');
+        let num2 = +prompt('Enter second number : ');
+        let num3 = +prompt('Enter third number : ');
+        document.write('Smallest value is = ' + checkMin(num1, num2, num3));
+    </script>
+</body>
+
+</html>

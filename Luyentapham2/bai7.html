@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function changePosition(a,b){
+            let temp = a;
+            a = b ;
+            b = temp ;
+            return [a,b];
+        }
+        num1 =+prompt('Enter a : ');
+        num2 =+prompt('Enter b : ');
+        alert (changePosition(num1,num2));
+    </script>
+</body>
+</html>

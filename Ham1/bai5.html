@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function footToMeter(foot){
+            let resultmeter = 0.305 * foot ;
+            return resultmeter ;
+        }
+        function meterToFoot(meter) {
+            let resultfoot = 3.279 * meter ;
+            return resultfoot ;
+        }
+        let n = +prompt('Enter number of foot and meter :');
+        document.write(meterToFoot(n)+ ' ft' +'<br>');
+        document.write(footToMeter(n)+' m');
+
+    </script>
+</body>
+</html>
